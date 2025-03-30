@@ -2,6 +2,7 @@ import { clerkClient } from "@clerk/express";
 import Course from "../models/Course.js";
 import { v2 as cloudinary } from "cloudinary";
 import {Purchase} from "../models/Purchase.js";
+import User from "../models/User.js";
 
 //  update Role To Educator
 export const updateRoleToEducator = async (req, res) => {
@@ -117,9 +118,9 @@ export const getEnrolledStudentData = async (req, res) => {
       status: "Completed",
     })
       .populate("userId", "name imageUrl")
-      .populate("courseID", "courseTitle");
+      .populate("courseId", "courseTitle");
 
-    const enrolledStudents = purchases.map((purchase) => ({
+    const enrolledStudents = purchase.map((purchase) => ({
       student: purchase.userId,
       courseTitle: purchase.courseId.courseTitle,
       purchaseData: purchase.createdAt,

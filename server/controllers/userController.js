@@ -10,7 +10,7 @@ export const getUserData = async (req, res) => {
     const userId = req.auth.userId;
     const user = await User.findById(userId);
     if (!user) {
-      return res.json({ success: false, message: "User not found" });
+      return res.json({ success: false, message: "User not found.." });
     }
     return res.json({ success: true, user });
   } catch (error) {
@@ -75,7 +75,7 @@ export const purchaseCourse = async (req, res) => {
     ];
     // Creating payment intent
     const session = await stripeInstance.checkout.sessions.create({
-      success_url: `${origin}/loading/my-enrollments`,
+      success_url: `${origin}/my-enrollments`,
       cancel_url: `${origin}/`,
       line_items: line_items,
       mode: "payment",
