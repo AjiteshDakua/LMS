@@ -82,9 +82,9 @@ const Navbar = () => {
         <div className="flex items-center gap-1 sm:gap-2 max-text-xs ">
           {user && (
             <>
-              <button onClick={becomeEducator}>
+{/*               <button onClick={becomeEducator}>
                 {isEducator ? "Educator Dashboard" : "Become Educator"}
-              </button>
+              </button> */}
               | <Link to="/">My Enrollments</Link>
             </>
           )}
