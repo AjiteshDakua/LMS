@@ -103,27 +103,28 @@ export const dummyEducatorData = {
 
 export const dummyTestimonial = [
     {
-        name: 'Donald Jackman',
-        role: 'SWE 1 @ Amazon',
+        name: 'Amit Sharma',
+        role: 'Software Engineer @ TCS',
         image: assets.profile_img_1,
         rating: 5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        feedback: 'This platform has been a game-changer for my career. The courses are well-structured, and the hands-on projects helped me land my first job in IT.',
     },
     {
-        name: 'Richard Nelson',
-        role: 'SWE 2 @ Samsung',
+        name: 'Priya Iyer',
+        role: 'Data Analyst @ Infosys',
         image: assets.profile_img_2,
-        rating: 4,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        rating: 4.5,
+        feedback: 'I was skeptical at first, but the interactive lessons and real-world examples made learning so much easier. Highly recommend for beginners!',
     },
     {
-        name: 'James Washington',
-        role: 'SWE 2 @ Google',
+        name: 'Rajesh Verma',
+        role: 'Full Stack Developer @ Wipro',
         image: assets.profile_img_3,
-        rating: 4.5,
-        feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
+        rating: 4,
+        feedback: 'The instructors are industry experts, and the platform offers a great learning experience. However, I’d love to see more advanced-level courses.',
     },
 ];
+
 
 export const dummyDashboardData = {
     "totalEarnings": 707.38,
