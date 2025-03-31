@@ -85,7 +85,7 @@ const Navbar = () => {
 {/*               <button onClick={becomeEducator}>
                 {isEducator ? "Educator Dashboard" : "Become Educator"}
               </button> */}
-               <Link to="/">My Enrollments</Link>
+               <Link to="/my-enrollments">My Enrollments</Link>
             </>
           )}
         </div>
